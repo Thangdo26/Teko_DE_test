@@ -2,7 +2,7 @@
 
 # Hướng Dẫn Chạy Code
 
-## 1. SQL
+## I. SQL
 
 ### Mục đích
 Chạy các truy vấn SQL để lấy giao dịch đầu tiên của mỗi khách hàng từ bảng `Transactions`.
@@ -31,7 +31,7 @@ Chạy các truy vấn SQL để lấy giao dịch đầu tiên của mỗi khá
    (5, 102, 150.00, '2023-01-04'); 
 2. **Chạy file query.sql**
 
-### 2. Python Script - Trích Xuất Thông Tin Bảng Từ File SQL
+### II. Python Script - Trích Xuất Thông Tin Bảng Từ File SQL
 
 ### Mục đích
 - Đọc file SQL có chứa nhiều câu lệnh.
