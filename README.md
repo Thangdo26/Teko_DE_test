@@ -40,13 +40,15 @@ Chạy các truy vấn SQL để lấy giao dịch đầu tiên của mỗi khá
 
 ### Yêu Cầu
 - Python 3.x
-- Thư viện `pyyaml`
+- PostgreSQL đã được cài đặt và chạy trên máy.
+- Thư viện Python: `pyyaml`, `psycopg2`, `sqlparse`.
 
 ### Hướng Dẫn Chạy
 
 1. **Cài đặt thư viện**  
    ```bash
-   pip install pyyaml
+   pip install pyyaml psycopg2 sqlparse
+   
 2. **Tạo file input.sql**
    ```sql
    CREATE TABLE sales_data AS
