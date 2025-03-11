@@ -1,6 +1,5 @@
 # Teko_DE_test
 
-readme_content = """
 # Hướng Dẫn Chạy Code
 
 ## 1. SQL
@@ -29,4 +28,31 @@ Chạy các truy vấn SQL để lấy giao dịch đầu tiên của mỗi khá
    (2, 100, 70.00, '2023-01-05'),
    (3, 101, 20.00, '2023-01-03'),
    (4, 102, 100.00, '2023-01-05'),
-   (5, 102, 150.00, '2023-01-04');
+   (5, 102, 150.00, '2023-01-04'); 
+2. **Chạy file query.sql**
+
+### 2. Python Script - Trích Xuất Thông Tin Bảng Từ File SQL
+
+### Mục đích
+- Đọc file SQL có chứa nhiều câu lệnh.
+- Trích xuất các bảng **input** (từ `FROM`, `JOIN`) và **output** (`CREATE TABLE`, `INSERT INTO`).
+- Xuất kết quả ra file YAML.
+
+### Yêu Cầu
+- Python 3.x
+- Thư viện `pyyaml`
+
+### Hướng Dẫn Chạy
+
+1. **Cài đặt thư viện**  
+   ```bash
+   pip install pyyaml
+2. **Tạo file input.sql**
+   ```sql
+   CREATE TABLE sales_data AS
+   SELECT * FROM raw_data.transactions
+   JOIN customer_info ON transactions.customer_id = customer_info.id;
+3. **Chạy script python**
+   ```python
+   python parse_sql.py
+4. **Kiểm tra kết quả trong file tables.yaml**
