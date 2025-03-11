@@ -1,5 +1,4 @@
-                                                                                                                                                   # Teko_DE_test
-# Đoạn script này sẽ tạo (hoặc ghi đè) file readme.md với nội dung hướng dẫn
+# Teko_DE_test
 
 readme_content = """
 # Hướng Dẫn Chạy Code
